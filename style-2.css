@@ -1,0 +1,1126 @@
+
+/* Reset CSS */
+
+
+
+* {
+
+    margin: 0;
+   
+   }
+   
+   
+   
+   
+   
+   /* Variáveis */
+   
+   
+   
+   .background-preto{
+   
+       background-color: #000;
+   
+   }
+   
+   
+   
+   .background-azul{
+   
+       background-color: var(--preto);
+   
+   }
+   
+   
+   
+   .background-cinza{
+   
+       background-color: #CDDADF;
+   
+   }
+   
+   
+   
+   .pt-sans-regular {
+   
+       font-family: "PT Sans", sans-serif;
+   
+       font-weight: 400;
+   
+       font-style: normal;
+   
+     }
+   
+   
+   
+     .pt-sans-bold {
+   
+       font-family: "PT Sans", sans-serif;
+   
+       font-weight: 700;
+   
+       font-style: normal;
+   
+     }
+   
+   
+   
+     .pt-sans-regular-italic {
+   
+       font-family: "PT Sans", sans-serif;
+   
+       font-weight: 400;
+   
+       font-style: italic;
+   
+     }
+   
+   
+   
+     .pt-sans-bold-italic {
+   
+       font-family: "PT Sans", sans-serif;
+   
+       font-weight: 700;
+   
+       font-style: italic;
+   
+     }
+   
+   
+   
+   :root { /* criação de variáveis (para colocar cores de maneira que possam mudar tudo de uma vez caso haja mudança, sem ter que trocar de elemento a elemento) */
+   
+       --azul:#13678A;
+   
+       --verde-agua:#45C4B0;
+   
+       --preto: #012030;
+   
+       --font-lh: "PT Sans", sans-serif;
+   
+   }
+
+  
+  .texto-formulario{
+    color: #012030;
+  }
+  
+   
+   button:hover{
+    background-color: var(--azul);
+    color: white;
+    text-decoration: none;
+   }
+   
+   body{
+   
+       background-color: var(--preto);
+   
+       font-family: var(--font-lh);
+   
+       color: #CDDADF;
+   
+   }
+
+.videos-flex{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   
+}
+   
+   
+   .text-botao-alinhar{
+
+   
+       display: flex;
+   
+       align-items: center;
+   
+       justify-content: center;
+   
+       flex-direction: column;
+   
+   }
+   
+   
+   
+   section {
+   
+       padding: 50px 0;
+   
+   }
+
+   .botoes{
+    padding-top: 20px;
+   }
+   
+   
+   .container {
+   
+       width: 90%;
+   
+       max-width: 1200px;
+   
+       margin: 0 auto;
+   
+       text-align: center;
+   
+   }
+
+   
+   
+   .titulos {
+
+    padding-top: 50px;
+   
+       font-size: 64px;
+   
+       text-align: center;
+   
+       line-height: 60px;
+   
+       padding-bottom: 40px;
+   
+       font-weight: 700;
+   
+   }
+   
+   .espaco {
+    padding-bottom: 50px;
+   }
+   
+   .degrade01{
+   
+       background: var( --verde-agua );
+   
+       background-clip: border-box;
+   
+       -webkit-background-clip: text;
+   
+       -webkit-text-fill-color: transparent;
+   
+   }
+   
+   
+   
+   .degrade02{
+   
+       background: var(--preto );
+   
+       background-clip: border-box;
+   
+       -webkit-background-clip: text;
+   
+       -webkit-text-fill-color: transparent;
+   
+   }
+   
+   
+   
+   .a-lh-banner-01{
+   
+       width: 100%;
+   
+   
+   
+   }
+   
+   
+   
+   .fa-quote-left{
+   
+       font-size: 128px;
+   
+   }
+   
+   
+   
+   .a-lh-jucelino{
+   
+       font-size: 64px;
+   
+       line-height: 44px;
+   
+   }
+   
+   
+   
+   .a-lh-numeros{
+   
+       font-size: 150px;
+   
+       font-weight: bold;
+   
+       line-height: 100px;
+   
+   }
+   
+   
+   
+   /* dá pra colocar o nome de 2 classes assim como está mostrando abaixo caso ambas sigam as mesmas configurações */
+   
+   .a-lh-flex, .numeros-flex {
+   
+       display: flex;
+   
+       align-items: center;
+   
+   }
+   
+   
+   
+   /* AQUI COMEÇA A SEÇÃO DE SERVIÇOS*/
+   
+   .cards-faq{
+    margin-left: 80px;
+    padding-bottom: 0px;
+   }
+   
+   
+   
+   .fileira-cards{
+   
+       display: flex;
+   
+       align-items: center;
+   
+       justify-content: center;
+   
+   }
+   
+  
+
+   
+   .servicos-card{
+   
+       background-color: white;
+   
+       width: 100%;
+   
+       margin: 25px;
+   
+       padding: 25px;
+   
+       border-radius: 25px;
+   
+       color: var(--preto);
+   
+       font-size: 2em; /* "em"é uma medida padrão do sistema, nesse caso estamos usando 2 vezes a medida padrão do sistema */
+   
+       line-height: 1em; /*  nesse caso estamos usando 1 vez a medida padrão do sistema */
+   
+       text-align: center;
+   
+       box-shadow: 0px 0px 50px 0px #6e34bf;
+   
+   }
+   
+   
+   
+   .fileira-cards > .servicos-card > button {
+   
+       border: 3px solid #128c7e;
+   
+       border-radius: 50px;
+   
+       background-color: white;
+   
+       font-size: 30px;
+   
+       padding: 7px 14px;
+   
+       font-family: var(--font-lh);
+   
+       width: 100%;
+   
+   }
+   
+   
+   
+   .fileira-cards > .servicos-card > button a{
+   
+       text-decoration: none;
+   
+       color: var(--preto);
+   
+       display: flex;
+   
+       align-items: center;
+   
+       justify-content: center;
+   
+   }
+   
+   .formulário{
+    height: 55px;
+    width: 650px;
+    border-color: #012030;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #CDDADF;
+    color: #000;
+
+   }
+   
+   
+   .fa-whatsapp {
+   
+       color: #128c7e;
+   
+   }
+   
+   
+   
+   .subtitulos{
+   
+       font-size: 30px;
+   
+       text-align: center;
+   
+       line-height: 44px;
+   
+       color: white;
+   
+   }
+   
+   
+   
+   /*contato*/
+   
+   
+   
+   input, textarea {
+   
+       background-color: var(--preto);
+   
+       border:  1px solid white;
+   
+       border-radius: 50px;
+   
+       color: white;
+   
+       padding: 20px;
+   
+       /*para deixar todas as linhas dos formulário da mesma largura*/
+   
+       width: -webkit-fill-available;
+   
+   }
+   
+   
+   
+   label {
+   
+       font-size: 2em;
+   
+   }
+   
+   
+   
+   .botao {
+   
+       background: var(--verde-agua);
+   
+       border: none;
+   
+       border-radius: 50px;
+   
+       padding: 10px;
+   
+       color: var(--preto);
+   
+       font-family: var(--font-lh);
+   
+       font-size: 30px;
+   
+       width: 350px;
+   
+       height: 100px;
+
+       text-decoration: none;
+}
+   
+   
+   
+       /* display: flex;
+   
+       justify-content: center ;
+   
+       text-align:center;
+   
+           left: 100%;
+   
+           top: 100%;
+   
+           margin-left:-110px;
+   
+           margin-top:-40px;
+   
+       padding: 15px 20px; */
+   
+   
+   
+   .botao02{
+
+    padding-left: 10px;
+   
+       background: var(--preto);
+   
+       border-radius: 50px;
+   
+       border-color: var(--verde-agua);
+   
+       color: var(--verde-agua);
+   
+       font-family: var(--font-lh);
+   
+       font-size: 30px;
+   
+       width: 350px;
+   
+       height: 100px;
+       text-decoration: none;
+}
+   
+   .botao :hover{
+    background-color: var(--azul);
+    color: white;
+    text-decoration: none;
+}
+
+   
+   .botao02 :hover{
+    background-color: var(--azul);
+     color: #fff ;
+     text-decoration: none;
+   }
+   
+   .botao-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+   }
+   
+   .text-botao-alinhar{
+    display: flex;
+   }
+
+.faq{
+    margin: 50px;
+    color: #012030;
+      text-align: center;
+   
+       text-align: center;
+       justify-content: center;
+       
+       display: flex;
+
+       align-items: center;
+   
+       line-height: 60px;
+   
+       padding-bottom: 40px;
+   
+       font-weight: 700;
+   
+    color: var(--preto);
+   }
+   
+   .contato-icone {
+   
+       height: 60px;
+   
+       padding-right: 20px;
+   
+   }
+   
+   .flex-formulario{
+    display: flex;
+
+   }
+
+   
+   .Perguntas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    flex-wrap: wrap-reverse;
+
+   }
+   
+   .contato-flex{
+   
+       display: flex;
+   
+   }
+   
+   
+   
+   .contato-flex > div {
+   
+       width: 100%;
+   
+   }
+   
+   
+   
+   .contato-cards {
+   
+       display: flex;
+   
+       align-items: center;
+   
+       background-color: var(--verde-agua);
+   
+       padding: 50px;
+   
+       margin-bottom: 25px;
+   
+       border-radius: 25px;
+   
+       box-shadow: 8px 8px 25px 6px rgba(0, 0, 0, 0.25), -8px -8px 25px -12px rgba(255, 255, 255, 0.25);
+   
+   }
+   
+   
+   
+   .contato-cards > div > p {
+   
+       font-size: 48px;
+   
+       line-height: 28px;
+   
+   }
+   
+   
+   
+   /* classe pro outro jeito de fazer os cards
+   
+       .cards-contato{
+   
+       background-color: #150b26;
+   
+       box-shadow:  0px 10px 0px 10px white;
+   
+       box-shadow:  10px 0px 10px 0px #262626;
+   
+       width: 50%;
+   
+       margin: 25px;
+   
+       padding: 25px;
+   
+       border-radius: 25px;
+   
+       font-size: 2em;
+   
+       line-height: 1em;
+   
+       text-align: left;
+   
+       display: flex;
+   
+   }*/
+   
+   #falecomespecialista{
+color: #45C4B0;
+   }
+
+   #falecomespecialista :hover{
+    color: #fff;
+   }
+
+   footer > p {
+   
+       text-align: center;
+   
+       border-radius: 50px 50px 0px 0px;
+
+       display: flex;
+
+       justify-content: center;
+       
+       align-items: center;
+   
+       font-size: 25px;
+   
+       padding: 15px 105px;
+   
+       color: #CDDADF;
+   
+   }
+   
+   
+   
+   .cinza{
+   
+       background: #797979;
+   
+       background-clip: border-box;
+   
+       -webkit-background-clip: text;
+   
+       -webkit-text-fill-color: transparent;
+   
+   }
+   
+   
+   
+   .icone02{
+   
+       height: 50px;
+   
+   }
+   
+   
+   
+   /*cabeçalho*/
+   
+   
+   
+   #burguer{
+   
+       display: none;
+   
+   }
+   
+   
+   
+   header{
+   
+       position: absolute;
+   
+       /* o z-index é o que determina a "camada"do elemento, quanto maior o z-index, maior a prioridade do elemento na tela*/
+   
+       z-index: 1000;
+   
+       border-radius: 100px;
+   
+       padding: 25px;
+   
+       margin: 25px;
+   
+       width: 1200px;
+   
+   }
+   
+   
+   
+   .logo{
+   
+       height: 50px;
+   
+       padding: 20px 0 0 10px;
+   
+   }
+   
+   
+   
+   .menu{
+   
+       display: flex;
+   
+       list-style: none;
+   
+       font-weight: bold;
+   
+       text-transform: lowercase;
+   
+       align-items: center;
+   
+   }
+   
+   
+   
+   nav {
+   
+       display: flex;
+   
+       justify-content: center;
+   
+   }
+   
+   
+   
+   .menu > li {
+   
+       font-size: 2.0em;
+   
+   }
+   
+   
+   
+   .menu > li > a {
+   
+       color: #CDDADF;
+   
+       text-decoration: none;
+   
+       padding: 15px 30px;
+   
+   
+   
+   }
+   
+   
+   
+   .menu > li > a:hover {
+   
+       background-color: var(--roxo-claro);
+   
+       color: white;
+   
+       border-radius: 50px;
+   
+   }
+   
+   
+   
+   /* Topo */
+   
+   
+   
+   #topo {
+   
+       position: relative;
+   
+       width: 100%;
+   
+       height: 100vh; /* Vh significa "view height", então é medido pela altura da tela */
+   
+       overflow: hidden; /* para quando o elemento não deve passar dos limites da tela, fica "preso" */
+   
+   }
+   
+   
+   
+   .video-background{
+   
+       position: absolute;
+   
+       top: 0;
+   
+       left: 0;
+   
+       width: 100%;
+   
+       height: 100%;
+   
+       z-index: -1; /* o -1 é para que o objeto da classe seja levado para a "camada de trás" */
+   
+   }
+   
+   
+   
+   .video-background video {
+   
+       min-width: 100%;
+   
+       min-height: 100%;
+   
+       object-fit: cover;
+   
+   }
+   
+   
+   
+   .informacoes-topo{
+   
+       display: flex;
+   
+       height: 100vh;
+   
+       flex-direction: column;
+   
+       align-items: center;
+   
+       justify-content:center;
+   
+       text-align: center;
+   
+   }
+   
+   
+   
+   .fa-chevron-down {
+   
+       font-size: 50px;
+   
+   }
+   
+   
+   
+   .fa-paper-plane{
+   
+       font-size: 15px;
+   
+   }
+   
+   .container {
+      text-align: center;
+    color: #fff;
+  }
+
+  .card-container {
+    width: 417px;
+    height: 584px;
+    padding-bottom: 0 ;
+  }
+
+  .card-container5 {
+    width: 417px;
+    height: 852px;
+  }
+
+  .card-container6{
+    width: 417px;
+    height: 584px;
+  }
+
+.conteiner-dos-cards{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-botao-alinhar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+  .card {
+    position: relative;
+    text-align: center;
+    transition: all 1s ease-in-out;
+    transform-style: preserve-3d;
+    box-shadow: 0 0 8px #fff;
+    border-radius: 5px;
+    margin-top: 60px;
+  }
+  .card:hover {
+    transform: rotateY(180deg);
+  }
+  .front-side, .back-side {
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  .front-side img {
+    border-radius: 5px;
+  }
+  .back-side {
+
+    color: #fff;
+    transform: rotateY(180deg);
+  }
+  .profile-content {
+    padding: 20px;
+  }
+  .profile-content h2 {
+    margin: 30px 0 40px;
+  }
+  .contact-section {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+ 
+  }
+  .contact-section a {
+   
+    margin-right: 15px;
+    color:#fff;
+  }
+  .contact-section a:hover {
+    opacity: 0.7;
+  }
+   
+   @media (min-width: 431px){
+   
+   .a-lh-banner-02 {
+   
+       display: none;
+   
+   }
+   
+   
+   
+   .a-lh-banner-01 {
+   
+       width: 100%;
+   
+   }
+   
+   
+   
+   }
+   
+   
+   
+   /* Responsividade */
+   
+   
+   
+   @media (max-width: 431px) {
+   
+       .a-lh-flex, .fileira-cards, .contato-flex, .numeros-flex{
+   
+           flex-direction: column;
+   
+       }
+   
+   
+   
+       .contato-cards > div > p {
+   
+           font-size: 30px;
+   
+           line-height: 18px;
+   
+       }
+   
+   
+   
+       .a-lh-banner-01{
+   
+           display: none;
+   
+       }
+   
+   
+   
+       .a-lh-banner-02 {
+   
+           width: 100%;
+   
+       }
+   
+   
+   
+       .informacoes-topo {
+   
+           font-size: 75px;
+   
+           line-height: 60px;
+   
+       }
+   
+   
+   
+       .a-lh-flex, .numeros-flex {
+   
+           display: flex;
+   
+           flex-direction: column;
+   
+           align-items: center;
+   
+           text-align: center;
+   
+       }
+   
+   
+   
+       .juca {
+   
+           width: 90%;
+   
+       }
+   
+   
+   
+       .fileira-cards > .servicos-card {
+   
+           width: 90%;
+   
+       }
+   
+   
+   
+       .subtitulos {
+   
+           line-height: 50px;
+   
+       }
+   
+   }
+   
+   
+   
+   @media screen and (max-width: 580px){
+   
+       #burguer {
+   
+           display: block;
+   
+           color: black;
+   
+           font-size: 55px;
+   
+       }
+   
+   
+   
+       header {
+   
+           width: -webkit-fill-available;
+   
+       }
+   
+   
+   
+       nav {
+   
+           justify-content: space-between ;
+   
+       }
+   
+   
+   
+   
+   
+   
+   
+       #itens {
+   
+           display: none;
+   
+           position: absolute;
+   
+           top: 16vh;
+   
+           right: 0;
+   
+           width: 50vw;
+   
+           height: fit-content;
+   
+           flex-direction: column;
+   
+           align-items: center;
+   
+           background-color: white;
+   
+           border-radius: 25px;
+   
+           gap: 50px;
+   
+           padding: 25px;
+   
+       }
+   
+   
+   
+   }
+   
+   
